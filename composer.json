@@ -1,0 +1,14 @@
+{
+    "name": "kaio.souza/asc-self-assessment",
+    "description": "ASC WP Plugin for Self assessment form.",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kaio Souza",
+            "email": "kaio.souza@asc-aqua.org"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
