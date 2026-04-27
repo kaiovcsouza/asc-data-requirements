@@ -164,3 +164,26 @@ input[class=form-check-input] {
     overflow: hidden;
     background-color: #f1f1f1;
 }
+
+.tooltipasc {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltipasctext {
+    text-align: left;
+    visibility: hidden;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.856);
+    color: #fff;
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 99999;
+}
+
+.tooltipasc:hover .tooltipasctext {
+    visibility: visible;
+}

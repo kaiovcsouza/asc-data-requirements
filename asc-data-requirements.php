@@ -195,7 +195,29 @@ function ascds_form() {
 
 			<div class="row mb-4">
 				<div class="col-12 mb-3">
-					<span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+					<span>Data reporting requirements are identified throughout the ASC Farm Standard.</span>
+				</div>
+				<div class="col-12 mb-3">
+					<span>Data is submitted through the <a href="https://myasc.asc-aqua.org/login/" target="_blank">MyASC Certification Portal</a> 
+					and shall adhere to the <a href="https://programme-centre.asc-aqua.org/app/uploads/2025/05/ASC-PRC-005-ASC-Data-Submission-Procedure-V1.0-May-2025.pdf" target="_blank">ASC Data Submission Procedure</a>. 
+					If you are a producer and need access to the portal or have related questions, please contact: <a href="mailto: data@asc-aqua.org"> data@asc-aqua.org</a>.
+					</span>
+				</div>
+				<div class="col-12 mb-3">
+					<span>Data reporting requirements under the ASC Farm Standard vary depending on the:</span>
+					<ul style="list-style-type: disc;">
+						<li><strong>Species group</strong></li>
+						<li><strong>Production system type</strong></li>
+						<li>the <strong>Water type</strong> the farm is located in,</li>
+						<li>whether the species is <strong>Feed dependent</strong>,</li>
+						<li>the receiving <strong>Waterbody type</strong>, and</li>
+						<li>the <strong>Production method</strong>.</li>
+					</ul>
+				</div>
+				<div class="col-12 mb-3">
+					<span>Use the filters to isolate the data reporting requirements applicable based on the variables of your system.</span>
+					<span><strong>Appendix 2a</strong> details the reporting topics with associated indicator numbers, a link to the required reporting templates and webforms, the frequency and timing of submission as well as the reporting level and temporal coverage.</span>
+					<span><strong>Appendix 3a</strong> of the <strong>ASC Data Submission Procedure</strong> details all the attributes associated with the reporting requirements of the ASC Farm Standard.</span>
 				</div>
 			</div>
 
@@ -229,7 +251,17 @@ function ascds_form() {
 					
 					<div class="col-12 col-md-4 mt-2">
 						<div class="asc-input">
-							<label class="form-label ascfilterlabel">Production System</label>
+							<div class="tooltipasc">
+								<label class="form-label ascfilterlabel tooltipasc">Production System <i class="bi bi-info-circle"></i></label>
+								<span class="tooltipasctext" style="font-weight: 500;">
+									ASC makes the distinction between "All-in all-out" production and "Continuous" production.<br><br>
+									<ul style="list-style-type: disc;">
+										<li><strong>All-in all-out:</strong> is equal to batch production, where there is a distinct stocking and harvest event. All animals in the production unit are in homogeneous developmental stages (same size/age/year class).</li>
+										<br>
+										<li><strong>Continuous:</strong> Stocking and harvesting may occur continuously during the year within the production unit. Animals within the production unit may vary in developmental stages.</li>
+									</ul>
+								</span>
+							</div>
 							<select class="form-select" id="psys">
 								<option></option>
 								<option value="Cages">Cages</option>
@@ -254,14 +286,13 @@ function ascds_form() {
 						</div>
 					</div>
 
-
 				</div>
 
 				<div class="row mt-2" style="margin: auto;">
 
 					<div class="col-12 col-md-4 mt-2">
 						<div class="asc-input">
-							<label class="form-label ascfilterlabel">Water body</label>
+							<label class="form-label ascfilterlabel">Water type</label>
 							<select class="form-select" id="wland">
 								<option></option>
 								<option value="Brackish_Water">Brackish water</option>
@@ -273,7 +304,13 @@ function ascds_form() {
 
 					<div class="col-12 col-md-4 mt-2">
 						<div class="asc-input">
-							<label class="form-label ascfilterlabel">Water type</label>
+							<div class="tooltipasc">
+								<label class="form-label ascfilterlabel">Waterbody type <i class="bi bi-info-circle"></i></label>
+								<span class="tooltipasctext" style="font-weight: 500;">
+									The waterbody type classification of the receiving body is based on Hydraulic Retention Time, Flow rate and Total Suspended Solids following the procedure of Appendix 8.5 of the ASC Farm Standard.
+								</span>
+
+							</div>
 							<select class="form-select" id="wtype">
 								<option></option>
 								<option value="Type_A">Type A</option>

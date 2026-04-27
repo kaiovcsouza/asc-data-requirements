@@ -40,7 +40,7 @@ function exportToExcel(optTables = [], filename, urls, ap3a_data = null) {
                     worksheet[key].t = 's'
                     if (!(key.startsWith('A'))) {
                         if (worksheet[key].v in urls) {
-                            worksheet[key].l = { Target: urls[worksheet[key].v] + worksheet[key].v };
+                            worksheet[key].l = { Target: urls[worksheet[key].v] };
                             worksheet[key].s = {
                                 font: {
                                     name: "Calibri",
@@ -265,10 +265,10 @@ jQuery(document).ready(function ($) {
                 let obj = JSON.parse(response)
 
                 if (obj.documents.length <= 0) {
-                    alertMsg('alert-warning', 'No data requirement found for this applicability.<BR>Please review applicability in filter.')
+                    alertMsg('alert-warning', ' No data requirements found for this applicability.<BR>Please review your applicability in the filters.')
                     return false;
                 }
-
+ 
                 let headers = []
                 Object.keys(obj.documents[0]).forEach(key => headers.push(key.replaceAll('_', ' ')));
 
