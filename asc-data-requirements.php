@@ -251,17 +251,7 @@ function ascds_form() {
 					
 					<div class="col-12 col-md-4 mt-2">
 						<div class="asc-input">
-							<div class="tooltipasc">
-								<label class="form-label ascfilterlabel tooltipasc">Production System <i class="bi bi-info-circle"></i></label>
-								<span class="tooltipasctext" style="font-weight: 500;">
-									ASC makes the distinction between "All-in all-out" production and "Continuous" production.<br><br>
-									<ul style="list-style-type: disc;">
-										<li><strong>All-in all-out:</strong> is equal to batch production, where there is a distinct stocking and harvest event. All animals in the production unit are in homogeneous developmental stages (same size/age/year class).</li>
-										<br>
-										<li><strong>Continuous:</strong> Stocking and harvesting may occur continuously during the year within the production unit. Animals within the production unit may vary in developmental stages.</li>
-									</ul>
-								</span>
-							</div>
+							<label class="form-label ascfilterlabel">Production System</label>
 							<select class="form-select" id="psys">
 								<option></option>
 								<option value="Cages">Cages</option>
@@ -276,7 +266,16 @@ function ascds_form() {
 
 					<div class="col-12 col-md-4 mt-2">
 						<div class="asc-input">
-							<label class="form-label ascfilterlabel">Production Method</label>
+							<div class="tooltipasc">
+								<label class="form-label ascfilterlabel">Production Method <i class="bi bi-info-circle"></i></label>
+								<span class="tooltipasctext" style="font-weight: 500;">
+									ASC makes the distinction between "All-in all-out" production and "Continuous" production.
+									<br><br>
+									<strong>All-in all-out:</strong> is equal to batch production, where there is a distinct stocking and harvest event. All animals in the production unit are in homogeneous developmental stages (same size/age/year class).
+									<br><br>
+									<strong>Continuous:</strong> Stocking and harvesting may occur continuously during the year within the production unit. Animals within the production unit may vary in developmental stages.
+								</span>
+							</div>
 							<select class="form-select" id="pmethod">
 								<option></option>
 								<option value="All_in_All_out">All-in All-out</option>

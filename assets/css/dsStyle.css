@@ -124,7 +124,6 @@
     color: white;
 }
 
-
 @keyframes rotation {
     0% {
         transform: rotate(0deg);
@@ -143,26 +142,6 @@
     to {
         top: 250px
     }
-}
-
-.form-check-input:checked {
-    background-color: #009c9d;
-    border-color: #009c9d;
-}
-
-input[type=radio] {
-    -webkit-appearance: none !important;
-}
-
-input[class=form-check-input] {
-    -webkit-appearance: none !important;
-}
-
-.content {
-    padding: 10px;
-    display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
 }
 
 .tooltipasc {
