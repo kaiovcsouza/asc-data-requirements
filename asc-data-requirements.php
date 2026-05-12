@@ -192,7 +192,7 @@ function ascds_form() {
 
 			<div class="row">
 				<div class="col-12 mb-3 mt-2" style="text-align: center;">
-					<h2 class="asctitle">Welcome to ASC Data Submission Requirements calculator</h2>
+					<h2 class="asctitle">Welcome to the ASC Data Submission Requirements calculator</h2>
 				</div>
 			</div>
 
@@ -217,10 +217,10 @@ function ascds_form() {
 						<li>the <strong>Production method</strong>.</li>
 					</ul>
 				</div>
-				<div class="col-12 mb-3">
+				<div class="col-12 mb-1">
 					<span>Use the filters to isolate the data reporting requirements applicable based on the variables of your system.</span>
-					<span><strong>Appendix 2a</strong> details the reporting topics with associated indicator numbers, a link to the required reporting templates and webforms, the frequency and timing of submission as well as the reporting level and temporal coverage.</span>
-					<span><strong>Appendix 3a</strong> of the <strong>ASC Data Submission Procedure</strong> details all the attributes associated with the reporting requirements of the ASC Farm Standard.</span>
+					<span><strong>Appendix 2a</strong> details the reporting topics with their associated indicator numbers, a link to the required reporting templates and webforms, the frequency and timing of submission as well as the reporting level and temporal coverage.</span>
+					<span><strong>Appendix 3a</strong> details all the attributes associated with the reporting requirements of the ASC Farm Standard.</span>
 				</div>
 			</div>
 
@@ -231,7 +231,7 @@ function ascds_form() {
 
 					<div class="col-12 col-md-4 mt-2">
 						<div class="asc-input">
-							<label class="form-label ascfilterlabel">Species</label>
+							<label class="form-label ascfilterlabel">Species group</label>
 							<select class="form-select" id="sp">
 								<option></option>
 								<option value="Abalone">Abalone</option>
